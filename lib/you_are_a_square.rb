@@ -10,7 +10,8 @@
 
 class Square
   def is_square?(number)
-    return false if number < 0 
-    Math.sqrt(number)
+    return false if number < 0
+    square_root = Math.sqrt(number)
+    square_root % 1 == 0
   end
 end
