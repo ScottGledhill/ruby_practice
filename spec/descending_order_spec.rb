@@ -1,4 +1,4 @@
-require 'desscending_order'
+require 'descending_order'
 
 describe DescendingOrder do
   it 'highest to lowest' do
