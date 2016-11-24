@@ -9,4 +9,8 @@ describe SumArray do
   it 'One element should return zero' do
     expect(subject.sum([3])).to eq 0
   end
+
+  it 'sums all numbers in the array except highest/lowest' do
+    expect(subject.sum([-6, 20, -1, 10, -12])).to eq 3
+  end
 end
