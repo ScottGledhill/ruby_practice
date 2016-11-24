@@ -1,4 +1,4 @@
-require 'complementary_spec'
+require 'complementary_dna'
 
 describe ComplementaryDna do
   it 'A changes to T' do

@@ -8,6 +8,7 @@
 # is no DNA at all.
 
 class ComplementaryDna
-  def dna_strand
+  def dna_strand(dna)
+    dna.tr('ATCG', 'TAGC')
   end
 end
