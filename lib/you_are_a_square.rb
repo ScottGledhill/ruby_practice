@@ -7,3 +7,10 @@
 #   If you just had a way to know, whether you're currently working in vain…
 #   Wait! That's it! You just have to check if your number of building blocks
 #   is a perfect square.
+
+class Square
+  def is_square?(number)
+    return false if number < 0 
+    Math.sqrt(number)
+  end
+end
