@@ -13,3 +13,6 @@ class SumArray
     new_array.inject(0){|sum,x| sum + x }
   end
 end
+
+
+# arr.nil? || arr.length < 3 ? 0 : arr.sort!.inject(:+)-arr[0]-arr[-1]
