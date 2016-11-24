@@ -5,7 +5,7 @@ describe ComplementaryDna do
     expect(subject.dna_strand('AAAA')).to eq 'TTTT'
   end
 
-  # it 'highest to lowest' do
-  #   expect(subject.dna_strand(1)).to eq 1
-  # end
+  it 'strand changes correctly' do
+    expect(subject.dna_strand('ATTGC')).to eq "TAACG"
+  end
 end
