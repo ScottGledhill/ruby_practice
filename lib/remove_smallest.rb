@@ -1,7 +1,7 @@
 class RemoveSmallest
   def remove_min(array)
-    return [] if array == []
-    p array.min.drop
-    array.map {|num| num}
+    return [] if array.empty?
+    array.delete_at(array.index(array.min))
+    array
   end
 end
