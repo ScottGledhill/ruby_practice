@@ -5,4 +5,8 @@ describe NextPerfectSquare do
     expect(subject.find_next_square(121)).to eq 144
     expect(subject.find_next_square(625)).to eq 676
   end
+
+  it 'returns -1 if number not perfect square' do
+    expect(subject.find_next_square(120)).to eq - 1
+  end
 end
