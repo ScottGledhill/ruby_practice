@@ -14,6 +14,6 @@ describe TugOfWar do
   end
 
   it 'finds tie if both anchors and teams are equal' do
-    expect(subject.tug_of_war([[1,2,3,4,5],[5,4,3,2,1]])).to eq "It's a tie!", "Equal team and Anchor strengths."
+    expect(subject.tug_of_war([[1,2,3,4,5],[5,4,3,2,1]])).to eq "It's a tie!, Equal team and Anchor strengths."
   end
 end
