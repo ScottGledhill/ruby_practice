@@ -6,6 +6,6 @@ describe HelpTheFruitGuy do
   end
 
   it 'returns lowercase array without rotten fruitscla' do
-    expect(subject.remove_rotten(["apple","rottenBanana","kiwi","rottenMango"])).to eq ["apple","Banana","kiwi","Mango"]
+    expect(subject.remove_rotten(["apple","rottenBanana","kiwi","rottenMango"])).to eq ["apple","banana","kiwi","mango"]
   end
 end
