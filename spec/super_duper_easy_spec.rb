@@ -6,6 +6,6 @@ describe SuperDuperEasy do
   end
 
   it 'returns number multiplied by 50 and increased by 6' do
-    expect(subject.problem(3).to eq 156
+    expect(subject.problem(3)).to eq 156
   end
 end
