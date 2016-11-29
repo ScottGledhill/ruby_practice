@@ -5,7 +5,7 @@ describe HelpTheFruitGuy do
     expect(subject.remove_rotten([])).to eq []
   end
 
-  it 'returns number multiplied by 50 and increased by 6' do
-    expect(subject.problem(3)).to eq 156
+  it 'returns lowercase array without rotten fruits' do
+    expect(subject.remove_rotten(["apple","rottenBanana","kiwi","rottenMango"])).to eq ["apple","Banana","kiwi","Mango"]
   end
 end
