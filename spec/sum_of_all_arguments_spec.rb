@@ -12,4 +12,8 @@ describe Sum do
   it 'test for strings' do
     expect(subject.sum_all(1,-32,"codewars",1076)).to eq false
   end
+
+  it 'test for nil' do
+    expect(subject.sum_all(1,-32,nil,1076)).to eq false
+  end
 end
