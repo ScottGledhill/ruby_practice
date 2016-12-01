@@ -10,4 +10,8 @@ describe Person do
   it 'initializes with last name' do
     expect(subject.last).to eq 'bobbly'
   end
+
+  it 'greets with first and last name' do
+    expect(subject.greet).to eq 'Hello, Bob Smith!'
+  end
 end
