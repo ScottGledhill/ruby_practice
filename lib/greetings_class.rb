@@ -6,5 +6,6 @@ class Person
   end
 
   def greet
+    "Hello, #{first} #{last}!"
   end
 end

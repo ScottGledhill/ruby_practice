@@ -14,6 +14,6 @@ describe Person do
 
   it 'greets with first and last name' do
     person = Person.new('bob', 'bobbly')
-    expect(person.greet).to eq 'Hello, Bob Smith!'
+    expect(person.greet).to eq 'Hello, bob bobbly!'
   end
 end
