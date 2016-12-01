@@ -2,7 +2,11 @@ require 'no_duplicates'
 
 describe NoDuplicates do
 
-  it 'removes duplicates' do
+  it 'removes duplicates and orders numbers first' do
     expect(subject.remove(["g", 3, "a", "a"])).to eq [ 3, 'a', 'g' ]
+  end
+
+  it 'removes duplicates' do
+    expect(subject.remove([1, 2, 3, 4, 1, 2, 3, 4])).to eq [1, 2, 3, 4]
   end
 end
