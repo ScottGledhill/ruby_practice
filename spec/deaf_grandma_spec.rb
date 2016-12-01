@@ -8,4 +8,8 @@ describe DeafGrandma do
   it 'if you type in caps she shouts not since 1983' do
     expect(subject.deaf('HELLO')).to eq 'NO, NOT SINCE 1938!'
   end
+
+  it 'if we shout BYE she says ok bye' do
+    expect(subject.deaf('BYE')).to eq 'OK, BYE!'
+  end
 end
