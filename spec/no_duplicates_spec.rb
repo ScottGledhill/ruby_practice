@@ -12,6 +12,9 @@ describe NoDuplicates do
 
   it 'returns Not an array if arg not an array' do
     expect(subject.remove("")).to eq "Not an array"
+  end
 
+  it 'removes nil from arrays' do
+    expect(subject.remove([1, 2, nil])).to eq [1, 2]
   end
 end
