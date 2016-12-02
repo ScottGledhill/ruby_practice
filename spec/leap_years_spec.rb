@@ -11,4 +11,5 @@ describe LeapYears do
 
   it 'tests for century exceptions' do
     expect(subject.year_days(-300)).to eq '-300 has 365 days'
+  end
 end
