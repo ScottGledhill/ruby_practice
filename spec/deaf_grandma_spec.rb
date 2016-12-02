@@ -12,4 +12,6 @@ describe DeafGrandma do
   it 'if we shout BYE she says ok bye' do
     expect(subject.deaf('BYE')).to eq 'OK, BYE!'
   end
+
+  it 'doesnt say bye if we say othe'
 end
