@@ -8,4 +8,8 @@ describe Triangular do
   it 'sums the two lowest integers in an array' do
     expect(subject.treasure(3).to eq 6
   end
+
+  it 'returns 0 if number < 0' do
+    expect(subject.treasure(-55).to eq 0
+  end
 end
