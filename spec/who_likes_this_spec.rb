@@ -5,4 +5,7 @@ describe WhoLikes do
     expect(subject.likes([])).to eq 'no one likes this'
   end
 
+  it 'returns who likes it if one person' do
+    expect(subject.likes(['Peter'])).to eq 'Peter likes this'
+  end
 end
