@@ -16,4 +16,9 @@ describe WhoLikes do
   it 'returns who likes it if multiple people' do
     expect(subject.likes(['Alex', 'Jacob', 'Mark', 'Max'])).to eq 'Alex, Jacob and 2 others like this'
   end
+
+  it 'should return for more than 4 people' do
+    expect(subject.likes(['Nene Romanova, Quincy Rosenkreutz, Linna Yamazaki, Sylvie, Anri, Sylia Stingray, Priscilla S. Asagiri, Nigel, Macky Stingray, Brian J. Mason, Daley Wong, Galatea, Leon McNichol'])).to eq
+    "Nene Romanova, Quincy Rosenkreutz and 11 others like this"
+  end
 end
