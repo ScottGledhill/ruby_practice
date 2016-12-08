@@ -1,7 +1,7 @@
-require 'longest'
+require 'prime'
 
-describe TwoToOne do
-  it 'returns string sorted and unique' do
-    expect(subject.longest(("aretheyhere"), ("yestheyarehere"))).to eq "aehrsty"
+describe Prime do
+  it 'returns true if prime' do
+    expect(subject.is_prime?(2)).to eq true
   end
 end
