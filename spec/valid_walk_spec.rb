@@ -6,6 +6,10 @@ describe ValidWalk do
   end
 
   it 'returns false if length is longer than 10' do
+    expect(subject.walk['n','n','n','s','n','s','n','s','n','s','n']).to eq 'should return false'
+  end
+
+  it 'returns false if walk does not end back at start' do
     expect(subject.walk['n','n','n','s','n','s','n','s','n','s']).to eq 'should return false'
   end
 end
