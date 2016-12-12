@@ -11,4 +11,9 @@ describe StriveMatching do
     candidate2 = { 'min_salary'=>1200000 }
     job2 = { 'max_salary'=>130000 }
     expect(subject.match(candidate1, job1)).to eq false
+  end
+
+  it 'raises error when no candidate' do
+    expect(subject.match(candidate1, job1)).to raise_error
+  end
 end
